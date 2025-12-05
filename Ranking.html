@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="team-header">
+    <img src="img/logo.png" class="team-logo">
+    <h1>Ranking</h1>
+</header>
+
+<nav class="tabs">
+    <a href="jugadores.html">Jugadores</a>
+    <a href="partidos.html">Partidos</a>
+    <a class="active" href="ranking.html">Ranking</a>
+</nav>
+
+<main class="team-container">
+    <h2>Ranking de Jugadores</h2>
+
+    <select id="ranking-criterio">
+        <option value="mvp">MVPs</option>
+        <option value="goles">Goles</option>
+        <option value="asistencias">Asistencias</option>
+    </select>
+
+    <section id="ranking-list"></section>
+</main>
+
+<footer class="team-footer">© 2025 FC GameingTOP</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
