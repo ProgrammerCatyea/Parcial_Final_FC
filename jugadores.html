@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Jugadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="team-header">
+    <img src="img/logo.png" class="team-logo">
+    <h1>Jugadores</h1>
+</header>
+
+<nav class="tabs">
+    <a class="active" href="jugadores.html">Jugadores</a>
+    <a href="partidos.html">Partidos</a>
+    <a href="ranking.html">Ranking</a>
+</nav>
+
+<main class="team-container">
+
+    <h2>Agregar jugador</h2>
+
+    <form id="form-jugador" class="player-form">
+        <input type="text" id="jugador-nombre" placeholder="Nombre" required>
+        <input type="text" id="jugador-posicion" placeholder="Posición" required>
+        <input type="number" id="jugador-dorsal" placeholder="Dorsal" required>
+        <input type="text" id="jugador-nacionalidad" placeholder="Nacionalidad">
+        <input type="text" id="jugador-foto" placeholder="URL foto">
+        <button type="submit">Añadir</button>
+    </form>
+
+    <h2>Lista de jugadores</h2>
+    <section class="players-grid"></section>
+
+</main>
+
+<footer class="team-footer">© 2025 FC GameingTOP</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
