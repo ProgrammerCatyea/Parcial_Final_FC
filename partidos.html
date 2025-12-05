@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Partidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="team-header">
+    <img src="img/logo.png" class="team-logo">
+    <h1>Partidos</h1>
+</header>
+
+<nav class="tabs">
+    <a href="jugadores.html">Jugadores</a>
+    <a class="active" href="partidos.html">Partidos</a>
+    <a href="ranking.html">Ranking</a>
+</nav>
+
+<main class="team-container">
+
+    <h2>Registrar partido</h2>
+
+    <form id="form-partido" class="match-form">
+        <input type="text" id="rival" placeholder="Rival" required>
+        <input type="date" id="fecha" required>
+        <input type="number" id="golesLocal" placeholder="Goles local">
+        <input type="number" id="golesRival" placeholder="Goles rival">
+        <select id="mvp"></select>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Rendimiento por jugador</h2>
+
+    <form id="form-rendimiento" class="performance-form">
+        <select id="rendimiento-partido" required></select>
+        <select id="rendimiento-jugador" required></select>
+        <input type="number" id="rendimiento-minutos" placeholder="Minutos">
+        <input type="number" id="rendimiento-goles" placeholder="Goles">
+        <button type="submit">Registrar</button>
+    </form>
+
+    <section id="partidos-list"></section>
+    <section id="rendimiento-list"></section>
+
+</main>
+
+<footer class="team-footer">© 2025 FC GameingTOP</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
